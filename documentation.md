@@ -1,6 +1,8 @@
 # proxy-chain documentation
 
-This is the manual for the local proxy chain. [README.md](README.md) is the short start guide.
+**Version 1.0.0**
+
+This is the manual for the local proxy chain. [README.md](README.md) is the short start guide. The version above is the program version in `proxy_chain/__init__.py` and `pyproject.toml`. `GET /status` reports the same value.
 
 The program listens on your machine and forwards TCP connections through proxies from `proxies.txt` or from the config file. You can add, remove, and reorder proxies while it is running. Hostnames are sent to the exit proxy, so DNS for the destination happens there.
 
@@ -178,4 +180,4 @@ The tests cover a two-hop chain, dead-proxy failover, one-proxy dynamic selectio
 
 ## Documentation updates
 
-`README.md` and this file are part of the project. A change to behavior, the proxy list, the modes, the command line, or the control API is supposed to update both documents in the same change. A Cursor rule in `.cursor/rules/update-docs.mdc` tells the editor to do that, and `.cursor/hooks/update-docs.py` asks for the update if code was saved without those files.
+`README.md` and this file are part of the project. A change to behavior, the proxy list, the modes, the command line, the control API, or the version is supposed to update both documents in the same change. The version line in each file must match `proxy_chain/__init__.py`. A Cursor rule in `.cursor/rules/update-docs.mdc` tells the editor to do that, and `.cursor/hooks/update-docs.py` asks for the update if code was saved without those files.

@@ -10,5 +10,6 @@ When a change affects behavior, configuration, the CLI, proxy list format, modes
 - `README.md` is the short start guide GitHub shows after a clone.
 - `documentation.md` is the full manual: modes, proxy list, config fields, control API, and the Linux VM setup.
 - Keep the two files consistent with each other and with the code.
+- The version line in both files must match `proxy_chain/__init__.py` and `pyproject.toml`. Change all four together.
 - Do not put real proxy usernames or passwords in docs, examples, or git.
 - Leave `proxies.txt` and `config.local.json` untracked.

@@ -1,5 +1,7 @@
 # proxy-chain
 
+**Version 1.0.0**
+
 Local TCP proxy. Point an application at it, and each connection goes out through a proxy you choose from a list. The list can change while the program is running.
 
 GitHub shows this file after you clone the repository. The full manual is [documentation.md](documentation.md).
