@@ -1,0 +1,35 @@
+{
+  "listen": {
+    "host": "127.0.0.1",
+    "port": 1080
+  },
+  "mode": "dynamic",
+  "chain_length": 1,
+  "min_hops": 1,
+  "allow_direct": false,
+  "connect_timeout": 10,
+  "handshake_timeout": 20,
+  "idle_timeout": 300,
+  "max_connections": 512,
+  "proxy_list": "proxies.txt",
+  "proxy_scheme": "http",
+  "proxy_username": "",
+  "proxy_password": "",
+  "auth": {
+    "username": "",
+    "password": ""
+  },
+  "control": {
+    "enabled": true,
+    "host": "127.0.0.1",
+    "port": 1081,
+    "token": ""
+  },
+  "health": {
+    "enabled": true,
+    "interval": 30,
+    "timeout": 5,
+    "cooldown": 30
+  },
+  "proxies": []
+}

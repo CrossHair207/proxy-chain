@@ -1,0 +1,19 @@
+# Copy this file to proxies.txt and put your own proxies there.
+# proxies.txt is ignored by git, so usernames and passwords stay on your machine.
+#
+# Webshare download format (IP:PORT:USERNAME:PASSWORD):
+# 203.0.113.10:8080:your-webshare-username:your-webshare-password
+#
+# Same credentials, other layouts:
+# your-webshare-username:your-webshare-password@203.0.113.10:8080
+# http://your-webshare-username:your-webshare-password@203.0.113.10:8080
+# socks5://your-webshare-username:your-webshare-password@203.0.113.10:1080
+#
+# A rotating Webshare endpoint can be a single host:port line. Put the shared
+# username and password in config.local.json as proxy_username and proxy_password.
+# p.webshare.io:80
+#
+# scheme applies to the lines below it. Use http for Webshare HTTP proxies
+# and socks5 for Webshare SOCKS5 proxies.
+
+scheme http

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proxy-chain"
+version = "1.0.0"
+description = "Local dynamic TCP proxy chain"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+proxy-chain = "proxy_chain.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["proxy_chain*"]
